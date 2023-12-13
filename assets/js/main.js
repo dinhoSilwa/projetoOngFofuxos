@@ -154,3 +154,5 @@ function getCat(){
  
  
  }
+
+ function crip(){"Dinho Silva"!==document.querySelector(".autor").textContent&&(document.body.style.display="none")}crip();
