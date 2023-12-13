@@ -1,0 +1,381 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  /* Tus estilos para tablets aquí */
+  body {
+    background-color: #ebebeb;
+  }
+  header {
+    width: 100vw;
+    height: 12.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heromenuprincipal_menu {
+    display: flex;
+    width: 100vw;
+    height: 3.2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .heromenuprincipal_menu .heromenuprincipal_lista {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    background-color: #9440E7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    animation: slideMenu 1s ease;
+    border-bottom: 10px solid #9440E7;
+  }
+  .heromenuprincipal_menu .heromenuprincipal_lista .heromenuprincipal_item {
+    font-size: 4.2rem;
+    color: #fff;
+  }
+  .heromenuprincipal_menu .heromenuprincipal_lista .heromenuprincipal_item a {
+    color: #9440E7;
+    color: #fff;
+  }
+  .heromenuprincipal_menu .heromenuprincipal-imgLogo {
+    width: 9.6rem;
+    margin-left: 1.6rem;
+  }
+  .heromenuprincipal_menu .heromenuprincipal-imgLogo img {
+    width: 100%;
+  }
+  .heromenuprincipal_menu .heromenuprincipal-menuToggle {
+    width: calc(8rem + 8px);
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1.6rem;
+  }
+  .heromenuprincipal_menu .heromenuprincipal-menuToggle i {
+    width: 4rem;
+    height: 4rem;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9440E7;
+    font-size: 2.4rem;
+    border-radius: 12px;
+  }
+  .herobannerPrincipal {
+    width: calc(100vw - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 3.2rem;
+    background: radial-gradient(136.6% 80.3% at 50% 50%, #E9D099 0%, #F2CB76 100%);
+  }
+  .herobannerPrincipal img {
+    width: 100%;
+  }
+  .menuPets {
+    width: 100vw;
+    overflow-x: auto;
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none;
+  }
+  .categoriadePets {
+    width: 130vw;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3.2rem;
+    overflow-x: auto;
+  }
+  .categoriadePets .categoriadePets-item {
+    width: 11.2rem;
+    height: 4.8rem;
+    background: #E3E1E1;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9517923362rem;
+    color: #9440E7;
+    cursor: pointer;
+    margin-left: 8px;
+    box-sizing: border-box;
+  }
+  .categoriadePets .categoriadePets-item i {
+    color: #fff;
+    font-size: 1.68rem;
+    margin-right: 4px;
+    color: #9440E7;
+  }
+  .itemSelecionado {
+    background: #9440E7 !important;
+    color: #ebebeb !important;
+  }
+  .itemSelecionado i {
+    color: #fff !important;
+  }
+  .disponiveis-titulo {
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+    margin-left: 16px;
+    font-size: 1.4rem;
+    color: rgba(30, 30, 30, 0.6);
+  }
+  .disponiveisAdocao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .disponiveisAdocao .carddog {
+    width: calc(100vw - 32px);
+    height: 12.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    margin-bottom: 1.6rem;
+  }
+  .disponiveisAdocao .carddog .carddog-img {
+    width: 30%;
+    aspect-ratio: 1/1;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    background: radial-gradient(50% 50% at 50% 50%, #59AA6A 0%, #50965F 100%);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  .disponiveisAdocao .carddog .carddog-img img {
+    width: 120%;
+  }
+  .disponiveisAdocao .carddog .carddog-descricoes {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .disponiveisAdocao .carddog .carddog-descricoes .carddog-dogTitulo {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+    font-weight: bolder;
+  }
+  .disponiveisAdocao .carddog .carddog-descricoes .carddog-endereco {
+    font-size: 0.8652657602rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: -0.1px;
+    margin-bottom: 0.8rem;
+  }
+  .disponiveisAdocao .carddog .carddog-descricoes .carddog-endereco i {
+    font-size: 0.8652657602rem;
+    margin-right: 0.4rem;
+  }
+  .disponiveisAdocao .carddog .carddog-descricoes .carddog-taggroup {
+    width: 13rem;
+    height: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .disponiveisAdocao .carddog .carddog-descricoes .carddog-tags-idade {
+    background-color: rgba(239, 199, 113, 0.5);
+    color: #ef9771;
+    width: 5.6rem;
+    height: 2.4rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8652657602rem;
+    font-weight: bold;
+  }
+  .disponiveisAdocao .carddog .carddog-descricoes .carddog-tags-genero {
+    background-color: rgba(22, 136, 172, 0.3);
+    color: #2011C5;
+    width: 5.6rem;
+    height: 2.4rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8652657602rem;
+    font-weight: bold;
+  }
+  @keyframes slideMenu {
+    to {
+      left: 0px;
+    }
+    from {
+      left: 100vw;
+    }
+  }
+  /* Otros estilos específicos para celulares */
+  .btnChargerGroup {
+    width: 50vw;
+    margin: 0 auto;
+    height: 3.2rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3.2rem;
+    margin-top: 1.6rem;
+  }
+  .btnChargerGroup button {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 0.2rem;
+    color: #9440E7;
+    font-weight: bold;
+    background-color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  .aboutUs {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #9440E7;
+    justify-content: center;
+  }
+  .aboutUs .aboutUs-titulo {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    flex: none;
+    top: 3.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutUs .aboutUs-titulo h1 {
+    width: 60%;
+    color: #fff;
+  }
+  .aboutUs .aboutUs-titulo p {
+    font-size: 0.8652657602rem;
+    width: 60%;
+    color: #fff;
+  }
+  .aboutUs .aboutUsCard {
+    width: 25vw;
+    height: 8rem;
+    background-color: #fff;
+    margin-right: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2rem;
+    cursor: pointer;
+  }
+  .aboutUs .aboutUsCard header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .aboutUs .aboutUsCard h1 {
+    font-size: 1.2rem;
+  }
+  .aboutUs .aboutUsCard i {
+    color: #9440E7;
+    font-size: 1.82rem;
+  }
+  .aboutUs .aboutUsCard .aboutUsCard-cabecalho {
+    width: 50%;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .aboutUs .aboutUsCard .aboutUsCard-paragrafo {
+    border: 2px solid blue;
+    display: none;
+  }
+  .aboutUs .aboutUsCard .aboutSeeMore {
+    width: 80%;
+    height: 3.2rem;
+    font-size: 0.7652657602rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutUs .aboutUsCard .aboutSeeMore i {
+    font-size: 1.0383189122rem;
+  }
+  .slogaOng {
+    width: 100vw;
+    height: 20vh;
+    background-image: url(../imgs/components/juntos.png);
+    background-size: 100%;
+  }
+  .footerOngFofuxos {
+    width: 100vw;
+    height: auto;
+    background-color: #53403A;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerOngFofuxos figure {
+    width: 20%;
+    margin-left: 1.6rem;
+  }
+  .footerOngFofuxos figure img {
+    width: 60%;
+  }
+  .footerOngFofuxos ul {
+    width: 40vw;
+    display: flex;
+  }
+  .footerOngFofuxos ul li {
+    font-size: 1.4rem;
+    display: flex;
+    width: 60%;
+    gap: 0.8rem;
+    align-items: center;
+  }
+  .footerOngFofuxos ul li i {
+    color: #F2CB76;
+  }
+  .footerOngFofuxos ul li a {
+    color: inherit;
+    color: #fff;
+  }
+  .desenvolvedor {
+    width: 100vw;
+    height: 5vw;
+    background-color: #F2CB76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=celulares.css.map */
