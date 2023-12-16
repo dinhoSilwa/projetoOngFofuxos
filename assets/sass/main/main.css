@@ -47,7 +47,7 @@ body {
     border-bottom: 10px solid #9440E7;
   }
   .heromenuprincipal_menu .heromenuprincipal_lista .heromenuprincipal_item {
-    font-size: 4.2rem;
+    font-size: 2.8rem;
     color: #fff;
   }
   .heromenuprincipal_menu .heromenuprincipal_lista .heromenuprincipal_item a {
@@ -113,7 +113,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.8652657602rem;
+    font-size: 0.9517923362rem;
     color: #9440E7;
     cursor: pointer;
     margin-left: 8px;
@@ -121,7 +121,7 @@ body {
   }
   .categoriadePets .categoriadePets-item i {
     color: #fff;
-    font-size: 1.68rem;
+    font-size: 1.82rem;
     margin-right: 4px;
     color: #9440E7;
   }
@@ -185,14 +185,14 @@ body {
     font-weight: bolder;
   }
   .disponiveisAdocao .carddog .carddog-descricoes .carddog-endereco {
-    font-size: 1.2978986403rem;
+    font-size: 1.3844252163rem;
     margin-bottom: 0.4rem;
     letter-spacing: -0.1px;
     margin-bottom: 0.8rem;
     display: flex;
   }
   .disponiveisAdocao .carddog .carddog-descricoes .carddog-endereco i {
-    font-size: 0.8652657602rem;
+    font-size: 0.9517923362rem;
     margin-right: 0.4rem;
   }
   .disponiveisAdocao .carddog .carddog-descricoes .carddog-taggroup {
@@ -210,7 +210,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.8652657602rem;
+    font-size: 1.0383189122rem;
     font-weight: bold;
   }
   .disponiveisAdocao .carddog .carddog-descricoes .carddog-tags-genero {
@@ -222,7 +222,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.8652657602rem;
+    font-size: 1.0383189122rem;
     font-weight: bold;
   }
   @keyframes slideMenu {
@@ -279,7 +279,7 @@ body {
     color: #fff;
   }
   .aboutUs .aboutUs-titulo p {
-    font-size: 0.8652657602rem;
+    font-size: 1.1248454883rem;
     width: 60%;
     color: #fff;
     margin-bottom: 3.2rem;
@@ -304,11 +304,11 @@ body {
     height: auto;
   }
   .aboutUs .aboutUsCard h1 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .aboutUs .aboutUsCard i {
     color: #9440E7;
-    font-size: 1.82rem;
+    font-size: 1.96rem;
   }
   .aboutUs .aboutUsCard .aboutUsCard-cabecalho {
     width: 50%;
@@ -320,7 +320,7 @@ body {
   }
   .aboutUs .aboutUsCard .aboutSeeMore {
     width: 80%;
-    height: 3.2rem;
+    height: 3rem;
     font-size: 0.7652657602rem;
     display: flex;
     justify-content: center;
@@ -337,27 +337,28 @@ body {
   }
   .footerOngFofuxos {
     width: 100vw;
-    height: auto;
+    height: 5vh;
     background-color: #53403A;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .footerOngFofuxos figure {
     width: 20%;
-    margin-left: 1.6rem;
   }
   .footerOngFofuxos figure img {
     width: 60%;
   }
   .footerOngFofuxos ul {
-    width: 40vw;
+    width: auto;
     display: flex;
+    margin-right: 1.6rem;
+    gap: 1rem;
   }
   .footerOngFofuxos ul li {
-    font-size: 1.4rem;
+    font-size: 1.54rem;
     display: flex;
-    width: 60%;
-    gap: 0.8rem;
+    justify-content: center;
     align-items: center;
   }
   .footerOngFofuxos ul li i {
