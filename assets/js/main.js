@@ -3,7 +3,7 @@ const carddogTitulo = document.querySelectorAll(".carddog-dogTitulo")
 const carddogEndereco = document.querySelectorAll(".city")
 const tagidade = document.querySelectorAll(".carddog-tags-idade")
 const taggenero = document.querySelectorAll(".carddog-tags-genero")
-
+const imgLogo = document.querySelector(".imgLogo-img")
 
 
 const imgDog = document.querySelectorAll(".imgDog")
@@ -154,5 +154,24 @@ function getCat(){
  
  
  }
+ chargeImgLogo()
+
+function chargeImgLogo(){
+   
+    const widthWindow = window.innerWidth 
+    console.log(widthWindow)
+    console.log(imgLogo)
+    if(widthWindow < 764) {
+        
+        imgLogo.src="assets/imgs/logotipo/MOBILE.PNG"
+    }else{
+        imgLogo.src="assets/imgs/logotipo/logo-menu.png"
+    }
+
+}
+    
+
+
+
 
  function crip(){"Dinho Silva"!==document.querySelector(".autor").textContent&&(document.body.style.display="none")}crip();
