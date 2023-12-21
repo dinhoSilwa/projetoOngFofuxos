@@ -169,6 +169,8 @@ function chargeImgLogo(){
     }
 
 }
+window.addEventListener('load', chargeImgLogo);
+window.addEventListener('resize', chargeImgLogo);
     
 
 
